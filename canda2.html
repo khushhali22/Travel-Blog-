@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Amritsar</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    }
+
+    .thrd {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 1rem;
+      background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
+      }
+
+    .logo img {
+      max-width:15%;
+      margin-right:450px ;
+    }
+
+    nav.abc {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 40px;
+    margin-left:-90rem;
+    }
+.btn {
+    background: none;
+    border: none;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;    
+} 
+.btn a {
+    text-decoration: none;
+    color:#121212;
+    font-weight: bold
+}
+.abc .btn a:hover {
+      background: #333;
+      color: #fff;
+    }
+h1.heading {
+      text-align: center;
+      margin: 2rem;
+      color: #333;
+      font-size: 3rem;
+}
+.taj {
+      text-align: center;
+}
+.taj img {
+      border-radius: 10px;
+}
+
+.taj p {
+      width: 90%;
+      margin: auto;
+      font-size: 1.2rem;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 20px;
+}
+h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #2d3436;
+      margin-bottom: 1rem;
+}
+.slideimg{
+      width: 80%;
+      height: 600px;
+      margin: auto;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 30px;
+    }
+  .slideimg>img{
+    border-radius: 15px;
+
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      transition: 1s;
+    }
+    .slidebtn {
+      margin-top: 15px;
+      margin-left: 150px;
+      margin-bottom: 20px;
+    }
+    .slidebtn button {
+      font-size: 25px;
+      padding: 10px;
+      background-color:#4271c8;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+    }
+    .slidebtn button:hover{
+      background-color:#1a428c;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="thrd">
+    <div class="logo">
+      <img src="https://marketplace.canva.com/EAFvvrEdW20/1/0/1600w/canva-blue-and-yellow-illustrative-travel-agency-logo-TWAjs1N3SXo.jpg"
+        alt="Amritsar Logo" height="100px" width="200px">
+    </div>
+    <nav class="abc">
+      <button class="btn"><a href="index.html"> Home</a></button>
+      <button class="btn"><a href="about us.html">About Us</a></button>
+      <button class="btn"><a href="hotel.html">Hotel</a></button>
+      <button class="btn"><a href="gallery.html">Gallery</a></button>
+      <button class="btn"><a href="contact.html">Contact Us</a></button>
+      <button class="btn"><a href="paking list.html">Packing List</a></button>
+      <button class="btn"><a href="budget.html">Budget List</a></button>
+    </nav>
+  </div>
+
+  <h1 class="heading">ABOUT CANADA</h1>
+  <div class="slideimg">
+    <img src="https://visaguru.ca/wp-content/uploads/02.jpg"class="slide" alt="">
+    <img src="https://tnphotos.s3.ca-central-1.amazonaws.com/uploads/2024/01/CN-Tower-1.jpg"class="slide" alt="">
+    <img src="https://www.xpozer.in/images/ca1.jpg"class="slide" alt="">
+    <img src="https://assets.metrolinx.com/image/upload/s---J1aPifJ--/c_limit,f_auto,q_auto,w_640/v1/Images/UP/Desktop%20Feature%20Article-niagara"class="slide" alt="">
+  </div>
+  <div class="slidebtn">
+    <button onclick="goPrev()">Prev</button>
+    <button onclick="goNext()">Next</button>
+  </div>
+  <div>
+    <h2><u>Canada</u></h2>
+    <div class="taj">
+      <img
+        src="https://bucketlistlists.com/wp-content/uploads/2021/06/canada-bucket-list-10.jpg"
+        alt="Golden Temple"  width="800" height="500">
+      <p>Canada is famous for the gorgeous scenery and uninhabited land. The views of the untouched and natural environment are breathtaking and composed of beautiful lakes and rivers.
+    </p>
+    </div>
+  </div>
+
+  <div>
+    <h2><u>Toronto</u></h2>
+    <div class="taj">
+      <img src="https://cdn.britannica.com/35/100235-050-CE3936EE/view-CN-Tower-Toronto-skyline-observation-deck.jpg"
+        alt="Jallianwala Bagh" width="800" height="500">
+      <p>Located on the north shore of Lake Ontario, Toronto is Canada's most populated city and the capital of the province of Ontario. The city is Canada's primary financial and commercial center. It is home to the Toronto Stock Exchange and many large businesses. Toronto also is a major international trading center.     </p>
+    </div>
+  </div>
+
+  <div>
+    <h2><u>Nigara Falls</u></h2>
+    <div class="taj">
+            <img src="https://www.niagaraparks.com/media/2017/04/niagara-falls-zipline.jpg" alt="kulcha"
+        alt="Wagah Border" width="800" height="500">
+      <p>The Horseshoe Waterfall of the United States is the most powerful waterfall here, in fact, this waterfall forms a shape like a horseshoe, hence it is called Horseshoe Waterfall. Niagara Falls is known for its hydroelectric power and is a valuable source of beauty.
+</p>
+    </div>
+</div>
+</body>
+<script>
+  const slides = document.querySelectorAll(".slide");
+  let counter = 0;
+  function setInitialSlidePositions() {
+  for (let index = 0; index < slides.length; index++) {
+    slides[index].style.left = `${index * 100}%`;
+    };
+  }
+  function goPrev() {
+    counter = (counter > 0) ? counter - 1 : slides.length - 1;
+    updateSlidePosition();
+  }
+  function goNext() {
+    counter = (counter < slides.length - 1) ? counter + 1 : 0;
+    updateSlidePosition();
+  }
+  function updateSlidePosition() {
+    for(let index=0; index<slides.length;index++){
+      slides[index].style.transform = `translateX(-${counter * 100}%)`;
+    };
+  }
+  setInitialSlidePositions();
+</script>
+</html>

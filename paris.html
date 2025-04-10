@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Amritsar</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    }
+   
+    .thrd {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 1rem;
+      background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
+    }
+
+    .logo img {
+      max-width:15%;
+      margin-right:450px ;
+    }
+
+    nav.abc {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 40px;
+    margin-left:-90rem;
+    }
+.btn {
+    background: none;
+    border: none;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;   
+} 
+.btn a {
+    text-decoration: none;
+    color:#121212;
+    font-weight: bold
+}
+.abc .btn a:hover {
+      background: #333;
+      color: #fff;
+}
+h1.heading {
+      text-align: center;
+      margin: 2rem;
+      color: #333;
+      font-size: 3rem;
+}
+.taj {
+      text-align: center;
+}
+.taj img {
+      border-radius: 10px;
+}
+
+.taj p {
+      width: 90%;
+      margin: auto;
+      font-size: 1.2rem;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 20px;
+}
+h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #2d3436;
+      margin-bottom: 1rem;
+}
+.slideimg{
+      width: 80%;
+      height: 600px;
+      margin: auto;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 30px;
+    }
+  .slideimg>img{
+    border-radius: 15px;
+
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      transition: 1s;
+    }
+    .slidebtn {
+      margin-top: 15px;
+      margin-left: 150px;
+      margin-bottom: 20px;
+    }
+    .slidebtn button {
+      font-size: 25px;
+      padding: 10px;
+      background-color:#4271c8;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+    }
+    .slidebtn button:hover{
+      background-color:#1a428c;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="thrd">
+    <div class="logo">
+      <img src="https://marketplace.canva.com/EAFvvrEdW20/1/0/1600w/canva-blue-and-yellow-illustrative-travel-agency-logo-TWAjs1N3SXo.jpg"
+        alt="Amritsar Logo" height="100px" width="200px">
+    </div>
+    <nav class="abc">
+      <button class="btn"><a href="index.html"> Home</a></button>
+      <button class="btn"><a href="about us.html">About Us</a></button>
+      <button class="btn"><a href="gallery.html">Gallery</a></button>
+      <button class="btn"><a href="hotel.html">Hotel</a></button>
+      <button class="btn"><a href="contact.html">Contact Us</a></button>
+      <button class="btn"><a href="paking list.html">Packing List</a></button>
+      <button class="btn"><a href="budget.html">Budget List</a></button>
+  </div>
+
+  <h1 class="heading">ABOUT Paris</h1>
+  <div class="slideimg">
+    <img src="https://media1.thrillophilia.com/filestore/sv8cmj5yufx5ht7qkjxaq3dkc9gx_1579345955_Eiffel_Tower.jpg?w=753&h=450&dpr=2.0"class="slide" alt="">
+    <img src="https://www.cometoparis.com/data/layout_grouping/static_page_step/20792_0bd10b87f37ed3c3edf836e8b8f5a254.jpg?ver=1675418131"class="slide" alt="">
+    <img src="https://media.timeout.com/images/100014673/750/562/image.jpg"class="slide" alt="">
+    <img src="https://www.getlostinwanderlust.com/wp-content/uploads/2024/04/Get-Lost-in-Wanderlust-2024-04-08T154421.486.jpg"class="slide" alt="">
+    
+  </div>
+  <div class="slidebtn">
+    <button onclick="goPrev()">Prev</button>
+    <button onclick="goNext()">Next</button>
+  </div>
+   
+  <div>
+    <h2><u>Paris</u></h2>
+    <div class="taj">
+      <img
+        src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D"
+        alt="Golden Temple" width="800" height="500">
+      <p>If you are lucky enough to have lived in paris as a young man then wherever you go for the rest of your life it stays with you for paris is a moveable feast</p>
+    </div>
+  </div>
+
+  <div>
+    <h2><u>Museums</u></h2>
+    <div class="taj">
+      <img src="https://assets-news.housing.com/news/wp-content/uploads/2022/08/09114426/10-best-places-to-visit-in-Paris-and-things-to-do-05.jpg" width="800" height="500">
+      <p>The Louvre is a museum in Paris. It has millions of visitors every year because of its art collection. It is the most visited art museum in the world. The most famous piece of art in the Louvre is the Mona Lisa by Leonardo da Vinci.
+    </p>
+    </div>
+  </div>
+
+  <div>
+    <h2><u>Eiffel Tower</u></h2>
+    <div class="taj">
+      <img src="https://cdn.shopify.com/s/files/1/0763/4881/7696/files/pexels-thorsten-technoman-109353-338515_480x480.jpg?v=1714986745"
+        alt="Wagah Border" width="800" height="500">
+      <p>The Eiffel Tower is a famous French landmark. It is a wrought-iron tower known all over the world for its beautiful architecture and cultural significance. It's about the same height as an 81-storey building, standing at 324 m from the base to the tip.
+    </p>
+    </div>
+</div>
+</body>
+<script>
+  const slides = document.querySelectorAll(".slide");
+  let counter = 0;
+  function setInitialSlidePositions() {
+  for (let index = 0; index < slides.length; index++) {
+    slides[index].style.left = `${index * 100}%`;
+    };
+  }
+  function goPrev() {
+    counter = (counter > 0) ? counter - 1 : slides.length - 1;
+    updateSlidePosition();
+  }
+  function goNext() {
+    counter = (counter < slides.length - 1) ? counter + 1 : 0;
+    updateSlidePosition();
+  }
+  function updateSlidePosition() {
+    for(let index=0; index<slides.length;index++){
+      slides[index].style.transform = `translateX(-${counter * 100}%)`;
+    };
+  }
+  setInitialSlidePositions();
+</script>
+
+</html>	
+
+
+ 

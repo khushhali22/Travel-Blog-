@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Booking Form</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+     body {
+        background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    }
+       
+    .thrd {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 1rem;
+        background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
+    }
+    .logo img {
+      max-width:15%;
+      margin-right:450px ;
+    }
+
+    nav.abc {
+       display: flex;
+       gap: 1.5rem;
+       font-size: 40px;
+       margin-left:-90rem;
+    }
+   .btn {
+        background: none;
+        border: none;
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+    } 
+    .btn a {
+        text-decoration: none;
+        color:#121212;
+        font-weight: bold
+    }
+    .abc .btn a:hover {
+        background: #333;
+        color: #fff;
+    }
+    .container h1 span {
+        color: #5c7fd1;
+    }
+    form {
+        margin:  auto;
+        padding: 2rem;
+        background: #fff;
+        border-radius: 20px;
+        max-width: 600px;
+    }
+   .form-control {
+            width: 100%;
+            padding: 10px;
+            margin: 1rem 0;
+            border-radius: 10px;
+            border: 2px solid #5c7fd1;
+            font-size: 16px;
+    }   
+    .submit {
+            background-color: #2d56b6;
+            color: white;
+            padding: 12px;
+            border-radius: 25px;
+            width: 100%;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+    }
+    .submit:hover {
+            background-color: #4166e1;
+            transform: scale(1.09);
+    }
+        </style>
+</head>
+<body>
+
+        <div class="thrd">
+        <div class="logo">
+                <img src="https://marketplace.canva.com/EAFvvrEdW20/1/0/1600w/canva-blue-and-yellow-illustrative-travel-agency-logo-TWAjs1N3SXo.jpg" alt="image" height="100px" width="200px">
+            </div>
+            <nav class="abc">
+                <button class="btn"><a href="index.html">Home</a></button>
+                <button class="btn"><a href="about us.html">About Us</a></button>
+                <button class="btn"><a href="hotel.html">Hotel</a></button>
+                <button class="btn"><a href="gallery.html">Gallery</a></button>
+                <button class="btn"><a href="paking list.html">Packing List</a></button>
+                <button class="btn"><a href="budget.html">Budget List</a></button>
+                <button class="btn"><a href="contact.html">Contact Us</a></button>
+            </nav>
+        </div>
+
+  <br><br>
+  <div class="container">
+        <h1><span>Book</span> Your Trip</h1>
+        <form>
+            <input type="text" class="form-control" placeholder="From Where" required>
+            <input type="text" class="form-control" placeholder="To Where" required>
+            <input type="text" class="form-control" placeholder="How Many" required>
+            <input type="date" class="form-control" placeholder="Arrivals" required>
+            <input type="date" class="form-control" placeholder="Leaving" required>
+            <textarea class="form-control"  placeholder="Enter Your Name & Details" required></textarea>
+            <input type="submit" value="Book Now" class="submit">
+        </form>
+   
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+    
+    .thrd {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
+    }
+
+    .logo img {
+      max-width:15%;
+      margin-right:450px ;
+    }
+
+    nav.abc {
+        display: flex;
+        gap: 1.5rem;
+        font-size: 40px;
+        margin-left:-90rem;
+    }
+    .btn {
+        background: none;
+        border: none;
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+    } 
+   .btn a {
+        text-decoration: none;
+        color:#121212;
+        font-weight: bold
+    }
+    .abc .btn a:hover {
+        background: #333;
+        color: #fff;
+    } 
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 32px;
+    }
+    .container {
+        background-image:url('https://www.shutterstock.com/image-vector/contact-us-background-eps-vector-260nw-2491405611.jpg');
+        background-size: cover; 
+        width:100%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+    }
+    div.container h1 {
+        margin-bottom: 20px;
+        font-size: 40px;
+        color:white;
+        margin-left: 700px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        margin-left: 950px;
+        padding-right: 150px;
+    }
+
+    label {
+        font-size: 28px;
+        margin-bottom: 10px;
+        color:white;
+        font-weight: bold;
+    }
+    input, textarea {
+        margin-bottom: 20px;
+        border: 1px solid black;
+        border-radius: 5px;
+        font-size: 30px;
+    }
+    textarea {
+        height: 50px;
+    }
+    .submit {
+        padding: 10px;
+        background-color: #4b5a89;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    .submit:hover {
+        background-color:#313c5f;
+        transform: scale(1.05);
+    }
+        
+    </style>
+</head>
+<body>
+    <div class="thrd">
+        <div class="logo">
+            <img src="https://marketplace.canva.com/EAFvvrEdW20/1/0/1600w/canva-blue-and-yellow-illustrative-travel-agency-logo-TWAjs1N3SXo.jpg" alt="image" height="100px" width="200px" >
+        </div>
+        <nav class="abc">
+            <button class="btn"><a href="index.html">Home</a></button>
+            <button class="btn"><a href="about us.html">About Us</a></button>
+            <button class="btn"><a href="hotel.html">Hotel</a></button>
+            <button class="btn"><a href="gallery.html">Gallery</a></button>
+            <button class="btn"><a href="paking list.html">Packing List</a></button>
+            <button class="btn"><a href="budget.html">Budget List</a></button>
+            <button class="btn"><a href="contact.html">Contact Us</a></button>
+        </nav>
+        </div>
+    </div>
+    <h1>Contact Us</h1>
+    <div class="container">
+            <h1>Helpline Number:10067809332</h1>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" placeholder="Name" maxlength="20" required>
+
+                <label for="email">Email</label>
+                <input type="Email" placeholder="email" required>
+
+                <label for ="message">Message</label>
+                <textarea placeholder="Message" required></textarea>
+                <input type="submit" value="submit" class="submit">
+        </form>
+    </div>
+
+</body>
+</html>

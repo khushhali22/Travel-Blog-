@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Amritsar</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    }
+   
+    .thrd {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 1rem;
+      background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
+    }
+
+    .logo img {
+      max-width:15%;
+      margin-right:450px ;
+    }
+
+    nav.abc {
+      display: flex;
+      gap: 1.5rem;
+      font-size: 40px;
+      margin-left:-90rem;
+    }
+   .btn {
+      background: none;
+      border: none;
+      font-size: 25px;
+      font-family: Arial, Helvetica, sans-serif;
+    } 
+  .btn a {
+    text-decoration: none;
+    color:#121212;
+    font-weight: bold
+  }
+  .abc .btn a:hover {
+      background: #333;
+      color: #fff;
+  }
+  h1.heading {
+      text-align: center;
+      margin: 2rem;
+      color: #333;
+      font-size: 3rem;
+  }
+  .taj {
+      text-align: center;
+  }
+
+  .taj img {
+      border-radius: 10px;
+  }
+
+  .taj p {
+      width: 90%;
+      margin: auto;
+      font-size: 1.2rem;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 20px;
+  }
+  h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #2d3436;
+      margin-bottom: 1rem;
+  }
+  .slideimg{
+      width: 80%;
+      height: 600px;
+      margin: auto;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 30px;
+    }
+  .slideimg>img{
+    border-radius: 15px;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      transition: 1s;
+    }
+    .slidebtn {
+      margin-top: 15px;
+      margin-left: 150px;
+      margin-bottom: 20px;
+    }
+    .slidebtn button {
+      font-size: 25px;
+      padding: 10px;
+      background-color:#4271c8;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+    }
+    .slidebtn button:hover{
+      background-color:#1a428c;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="thrd">
+    <div class="logo">
+      <img src="https://marketplace.canva.com/EAFvvrEdW20/1/0/1600w/canva-blue-and-yellow-illustrative-travel-agency-logo-TWAjs1N3SXo.jpg"
+        alt="Amritsar Logo" height="100px" width="200px">
+    </div>
+    <nav class="abc">
+      <button class="btn"><a href="index.html">Home</a></button>
+      <button class="btn"><a href="about us.html">About Us</a></button>
+      <button class="btn"><a href="hotel.html">Hotel</a></button>
+      <button class="btn"><a href="gallery.html">Gallery</a></button>
+      <button class="btn"><a href="contact.html">Contact Us</a></button>
+      <button class="btn"><a href="paking list.html">Packing List</a></button>
+      <button class="btn"><a href="budget.html">Budget List</a></button>
+    </nav>
+  </div>
+
+  <h1 class="heading">ABOUT RAJASTHAN</h1>
+  <div class="slideimg">
+    <img src="https://indiaholidaymall.com/images/highlights/6-Top-Rajasthan-Tourist-Places.jpg"class="slide" alt="Golden Temple">
+    <img src="https://blog.yatradham.org/wp-content/uploads/2023/07/jaipur.jpg"class="slide" alt="Golden Temple">
+    <img src="https://img.veenaworld.com/wp-content/uploads/2018/08/Hawa-Mahal_Jaipur.jpg"class="slide" alt="Golden Temple">
+    <img src="https://www.tourism-of-india.com/blog/wp-content/uploads/2017/10/jaipur.jpg"class="slide" alt="Golden Temple">
+  </div>
+  <div class="slidebtn">
+    <button onclick="goPrev()">Prev</button>
+    <button onclick="goNext()">Next</button>
+  </div>
+  <div>
+    <h2><u>Rajasthan</u></h2>
+    <div class="taj">
+      <img
+        src="https://www.abhibus.com/blog/wp-content/uploads/2023/07/Best-Places-to-Visit-in-Rajasthan.jpg"
+        alt="Golden Temple" width="800" height="500">
+      <p>The State of Rajasthan was formed on 30 March 1949 when the states of the Rajputana Agency of the erstwhile British Empire in India were merged into the new Indian Union. Its capital and largest city is Jaipur. Other important cities are Jodhpur, Kota, Bikaner, Ajmer, Bharatpur and Udaipur.
+    </p>
+    </div>
+  </div>
+
+  <div>
+    <h2><u>Jaipur</u></h2>
+    <div class="taj">
+      <img src="https://ihplb.b-cdn.net/wp-content/uploads/2021/09/places-to-visit-jaipur-750x430.jpeg"
+        alt="Jallianwala Bagh" width="800" height="500">
+      <p>Jaipur was India's first planned city. This is reflected in the well-designed intersections and straight, wide main streets. Just 260 km (162 miles) from the capital New Delhi, Jaipur is a busy city with a population of over 3 million people.
+    </p>
+    </div>
+  </div>
+
+  <div>
+    <h2><u>Jodpur</u></h2>
+    <div class="taj">
+      <img src="https://www.jcrcab.com/wp-content/uploads/2020/08/JODHPUR.jpg"
+        alt="Wagah Border" width="800" height="500">
+      <p>Jodhpur commonly recognized as the Sun City because of the bright sunny days throughout the year. Being the second largest city of the colorful land of Rajasthan, this Sun City with its blue colored walls and buildings is better known as the Blue City as well.
+    </p>
+    </div>
+  
+  </div>
+</body>
+<script>
+const slides = document.querySelectorAll(".slide");
+  let counter = 0;
+  function setInitialSlidePositions() {
+    slides.forEach(function(slide, index) {
+      slide.style.left = `${index * 100}%`;
+    });
+  }
+  function goPrev() {
+    counter = (counter > 0) ? counter - 1 : slides.length - 1;
+    updateSlidePosition();
+  }
+  function goNext() {
+    counter = (counter < slides.length - 1) ? counter + 1 : 0;
+    updateSlidePosition();
+  }
+  function updateSlidePosition() {
+    slides.forEach(function(slide) {
+      slide.style.transform = `translateX(-${counter * 100}%)`;
+    });
+  }
+  
+setInitialSlidePositions();
+</script>
+</html>

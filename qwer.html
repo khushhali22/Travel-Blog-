@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Amritsar</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    }
+    .thrd {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+      background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    }
+    .logo img {
+      max-width: 15%;
+      margin-right: 450px;
+    }
+    nav.abc {
+      display: flex;
+      gap: 1.5rem;
+      font-size: 20px;
+      padding: 1rem;
+    }
+    .btn {
+      background: none;
+      border: none;
+      font-size: 25px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .btn a {
+      text-decoration: none;
+      color: #121212;
+      font-weight: bold;
+    }
+    .abc .btn a:hover {
+      background: #333;
+      color: #fff;
+    }
+    h1.heading {
+      text-align: center;
+      margin: 2rem;
+      color: #333;
+      font-size: 3rem;
+    }
+    .taj {
+      text-align: center;
+      align-items: center;
+    }
+    .taj img {
+      border-radius: 10px;
+    }
+    .taj p {
+      width: 80%;
+      margin: auto;
+      font-size: 1.2rem;
+    }
+    h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #2d3436;
+      margin-bottom: 1rem;
+    }
+
+    /* Image Slider Styles */
+    main {
+      width: 700px;
+      height: 500px;
+      box-shadow: 0px 0px 3px grey;
+      margin: auto;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 30px;
+    }
+    .slide {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      transition: transform 0.5s ease;
+    }
+    .nav {
+      text-align: center;
+      margin-top: 15px;
+    }
+    .nav button {
+      font-size: 25px;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header and Navigation -->
+  <div class="thrd">
+    <div class="logo">
+      <img src="https://marketplace.canva.com/EAFvvrEdW20/1/0/1600w/canva-blue-and-yellow-illustrative-travel-agency-logo-TWAjs1N3SXo.jpg" alt="Amritsar Logo" width="200px">
+    </div>
+    <nav class="abc">
+      <button class="btn"><a href="index.html">Home</a></button>
+      <button class="btn"><a href="about us.html">About Us</a></button>
+      <button class="btn"><a href="hotel.html">Hotel</a></button>
+      <button class="btn"><a href="gallery.html">Gallery</a></button>
+      <button class="btn"><a href="contact.html">Contact Us</a></button>
+      <button class="btn"><a href="packing list.html">Packing List</a></button>
+      <button class="btn"><a href="budget.html">Budget List</a></button>
+    </nav>
+  </div>
+
+  <h1 class="heading">ABOUT AMRITSAR</h1>
+
+  <!-- Image Slider Section -->
+  <main>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/The_Golden_Temple_of_Amrithsar_7.jpg/1200px-The_Golden_Temple_of_Amrithsar_7.jpg" class="slide" alt="Golden Temple">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv-DN1V_1xxxM0Gw9VOwirmnzBgOQS1ene4w&s" class="slide" alt="Jallianwala Bagh">
+    <img src="https://blogmedia.testbook.com/blog/wp-content/uploads/2022/06/wagah-border-gate-e1137d54.jpeg" class="slide" alt="Wagah Border">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQCKFIvESmPi_byKeVkJYBi3fwhGdxdz9tTA&s" class="slide" alt="Amritsari Kulcha">
+  </main>
+  <div class="nav">
+    <button onclick="goPrev()">Prev</button>
+    <button onclick="goNext()">Next</button>
+  </div>
+
+  <!-- Amritsar Content -->
+  <div>
+    <h2><u>Golden Temple</u></h2>
+    <div class="taj">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/The_Golden_Temple_of_Amrithsar_7.jpg/1200px-The_Golden_Temple_of_Amrithsar_7.jpg" alt="Golden Temple" width="800" height="500">
+      <p>The Golden Temple is also called the “Darbar Sahib” or the “Harmandar Sahib”. Located in Amritsar, this is one of the oldest worship places for Indian Sikhs.</p>
+    </div>
+  </div>
+
+  <div>
+    <h2><u>Jaliwala Bagh</u></h2>
+    <div class="taj">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv-DN1V_1xxxM0Gw9VOwirmnzBgOQS1ene4w&s" alt="Jallianwala Bagh" width="500" height="400">
+      <p>The memorial at this site commemorates the 2000 Indians who were killed or wounded, shot indiscriminately by the British under the command of Gen Michael O’Dyer on April 13, 1919, during a peaceful public meeting. This was a major incident in India's freedom struggle.</p>
+    </div>
+  </div>
+
+  <div>
+    <h2><u>Wagah Border</u></h2>
+    <div class="taj">
+      <img src="https://blogmedia.testbook.com/blog/wp-content/uploads/2022/06/wagah-border-gate-e1137d54.jpeg" alt="Wagah Border" width="500" height="400">
+      <p>Wagah Border is located 32 km from Amritsar, Punjab. It lies on the Grand Trunk Road connecting Amritsar (India) and Lahore (Pakistan). The daily flag-lowering ceremony at this border is a major attraction for tourists.</p>
+    </div>
+  </div>
+
+  <div>
+    <h2><u>Amritsari Kulcha</u></h2>
+    <div class="taj">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQCKFIvESmPi_byKeVkJYBi3fwhGdxdz9tTA&s" alt="Amritsari Kulcha" width="500" height="400">
+      <p>Amritsar is known as the food capital of Punjab. One of the most famous street foods is Amritsari Kulcha, a stuffed flatbread enjoyed hot with butter. It is a humble take on the famous aloo ka paratha.</p>
+    </div>
+  </div>
+
+  <script>
+    const slides = document.querySelectorAll(".slide");
+    let counter = 0;
+
+    slides.forEach((slide, index) => {
+      slide.style.left = `${index * 100}%`;
+    });
+
+    const goPrev = () => {
+      counter = (counter > 0) ? counter - 1 : slides.length - 1;
+      slideImage();
+    };
+
+    const goNext = () => {
+      counter = (counter < slides.length - 1) ? counter + 1 : 0;
+      slideImage();
+    };
+
+    const slideImage = () => {
+      slides.forEach((slide) => {
+        slide.style.transform = `translateX(-${counter * 100}%)`;
+      });
+    };
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+div.thrd{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%)
+}
+.abc{
+    display: flex;
+    gap: 1.5rem;
+    font-size: 40px;
+    margin-left:-90rem;
+} 
+.logo img{
+    max-width:15%;
+    margin-right:450px;
+}
+.abc>button{
+    margin: 5px
+}
+.btn {
+    background: none;
+    border: none;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+.btn a {
+    text-decoration: none;
+    color:#121212;
+    font-weight: bold;
+}
+.abc .btn a:hover {
+    background: #333;
+    color: #fff;
+} 
+.box1{
+    background-image: url("https://wallpapers.com/images/featured/travel-laptop-0m6r2w9ywrwtb81n.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+}
+.box1 h1 {
+    font-size:60px;
+    margin: 10px;
+}
+.box1 p {
+    font-size:30px;
+}
+.box1 button {
+    font-size:20px;
+    background-color:rgb(55, 97, 133);
+    padding:0.6rem 0.4rem;
+}
+.box1 button a {
+    text-decoration: none;
+    color:  whitesmoke
+}
+.box1 button:hover {
+    transform: translateY(-3px);
+}
+
+h1{
+    text-align: center;
+    margin: 20px;
+    font-size: 30px;
+}
+.box2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    height: 40vh; 
+    width: 100%; 
+    text-align: center; 
+}
+.box2 .card {
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    margin: 2rem;
+}
+.box2 .card h2 {
+    margin: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.box2 .card a img {
+    margin-bottom: 1rem;
+}
+.box2 .card p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+.box2 .card a img:hover {
+    transform: scale(1.1);
+}
+.changecontent::after{
+    content: '';
+    color: #ffa500;
+    font-size: 40px;
+    animation: changetext 10s infinite linear;
+}
+@keyframes changetext{
+   0%{content:"Amritsar";}
+   10%{content:"Agra";}
+   20%{content:"Canada";}
+   30%{content:"Paris";}
+   40%{content:"Rajasthan";}
+   50%{content:"America";}
+}
